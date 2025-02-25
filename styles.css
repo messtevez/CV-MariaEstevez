@@ -1,0 +1,251 @@
+* {
+    background-color: black;
+    font-family: "Montserrat", serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+body {
+    position: relative;
+    padding-bottom: 5vh;
+    min-height: 100vh;
+}
+
+.logo1 {
+    height: 100px;
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-menu {
+    background-color: #622688;
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-menu li {
+    background-color: #622688;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vh;
+    min-height: 100vh;
+}
+
+.frase-home {
+    font-style: italic;
+    letter-spacing: 0.5vh;
+    font-weight: 500;
+    margin: -5px 10px 30px;
+}
+
+.header-menu li {
+    color: white;
+    list-style: none;
+}
+
+.header-menu a {
+    text-decoration: none;
+    padding: 0 5px;
+    background-color: #622688;
+}
+
+.introduccion {
+    display: flex;
+    flex-direction: row;
+}
+
+.introduccion img {
+    height: 270px;
+    width: fit-content;
+    margin: 3vh;
+    border-radius: 10px;
+}
+
+.textoIntro {
+    height: 200px;
+    width: 500px;
+}
+
+.invitacion-home {
+    margin-bottom: 5vh;
+
+}
+
+footer {
+    background-color: #622688;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: 6vw;
+    border-radius: 10px;
+    justify-content: space-around;
+    flex-direction: row;
+    position: absolute;
+    bottom: 5vh;
+}
+
+.logo2 {
+    height: 100px;
+    background-color: #622688;
+}
+
+.redes {
+    background-color: #622688;
+    display: flex;
+    flex-direction: row;
+}
+
+.redes i {
+    background-color: #622688;
+    font-size: 30px;
+}
+
+.redes a {
+    text-decoration: none;
+}
+
+footer p {
+    background-color: #622688;
+}
+
+.sobreMi {
+    width: 60vw;
+    font-size: larger;
+    margin: 5vh;
+}
+
+.experiencia {
+    width: 600px;
+}
+
+.form {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.form label {
+    font-size: 14px;
+}
+
+.form input,
+.form textarea {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    width: 20vw;
+}
+
+#mensaje {
+    height: 100px;
+}
+
+.form input[type="submit"] {
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.experiencia-titulo {
+    font-weight: 600;
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        position: relative;
+        padding-bottom: 5vh;
+    }
+
+    header {
+        flex-direction: column;
+
+    }
+
+    .header-menu {
+        width: 90%;
+    }
+
+    .header-menu a{
+        font-size: small;
+    }
+    .logo1 {
+        height: 150px;
+    }
+
+    .frase-home {
+        text-align: center;
+        margin: 0;
+        width: 60%;
+    }
+
+    .introduccion {
+        flex-direction: column;
+        padding-bottom: 6vh;
+
+    }
+
+    .introduccion img {
+        margin: 5vh;
+    }
+
+    .textoIntro {
+        height: 30vh;
+    }
+
+    .invitacion-home {
+        margin: 0;
+        width: 95%;
+    }
+
+    footer {
+        height: 15vh;
+        position: inherit;
+        margin: 5vh;
+
+    }
+
+    .experiencia{
+        width: 400px;
+    }
+
+
+
+}
