@@ -51,7 +51,6 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 1vh;
-    min-height: 100vh;
 }
 
 .frase-home {
@@ -231,7 +230,7 @@ footer p {
     }
 
     .invitacion-home {
-        margin: 0;
+        margin: 0 0 15 0;
         width: 95%;
     }
 
