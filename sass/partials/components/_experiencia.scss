@@ -1,0 +1,14 @@
+.experiencia {
+    div {
+        @include flex(column, center, center);
+        width: 70%;
+        text-align: justify;
+        font-size: large;
+
+        .experiencia-titulo {
+            font-weight: 600;
+            letter-spacing: 0.3vh;
+            font-style: italic;
+        }
+    }
+}
