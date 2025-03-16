@@ -1,0 +1,27 @@
+header {
+    @include flex(row, center, center);
+    width: 100%;
+
+    .logo-header {
+        height: 10rem;
+        margin: 0 30px;
+    }
+
+    .header-menu {
+        @include flex(row, center,center);        
+        background-color: map-get($map: $colors, $key: morado);
+        width: 70%;
+        border-radius: 10px;        
+        height: 5rem;
+
+        a {
+            margin: 5px;
+            text-decoration: none;
+            color: map-get($map: $colors, $key: blanco);
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+}

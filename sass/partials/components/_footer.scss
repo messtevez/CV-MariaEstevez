@@ -1,0 +1,29 @@
+footer {
+    @extend header;
+    margin-top: 5rem;
+
+    .caja-footer {
+        @include flex(row, center, center);
+        background-color: map-get($map: $colors, $key: morado);
+        height: 15vh;
+        border-radius: 10px;
+        width: 80%;
+
+        img {
+            height: 20vh;
+        }
+
+        .redes {
+            margin: 0 10px;
+            font-size: 3vh;
+
+            a {
+                color: map-get($map: $colors, $key: blanco)
+            }
+        }
+
+        p {
+            margin: 0 30px;
+        }
+    }
+}
