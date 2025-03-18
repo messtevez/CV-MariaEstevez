@@ -25,3 +25,13 @@ header {
         list-style: none;
     }
 }
+
+@media screen and (max-width: 768px){
+    header{
+        display: grid;
+        .header-menu{
+            width: 100%;
+            font-size: 20px;
+        }
+    }
+}

@@ -27,3 +27,13 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .caja-footer{
+        width:100% !important;
+        height: 10vh;
+        .logo2{
+            height: 15vh;
+        }
+    }
+}

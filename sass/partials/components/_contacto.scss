@@ -1,0 +1,40 @@
+form {
+    @include flex(row, center, center);
+    background-color: map-get($map: $colors, $key: morado);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h2 {
+        font-weight: 600;
+        letter-spacing: 0.3vh;
+        font-style: italic;
+        text-align: center;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input {
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        width: 80%;
+    }
+
+    .button {
+        margin-top: 10px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        width: 50%;
+    }
+
+}
