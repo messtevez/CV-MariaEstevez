@@ -7,6 +7,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <title>Maria Estévez</title>
 </head>
@@ -33,43 +36,60 @@
         </ul>
     </header>
     <main class="sobreMi">
-        <div class="caja-sobreMi">
-            <div class="img">
-                <img src="../media/Microfono.png" alt="Microfono">
+        <section class="container py-4">
+            <div class="row align-items-center caja-sobreMi">
+                <div class="col-md-4 ">
+                    <img src="../media/Microfono.png" alt="Microfono" class="img-fluid rounded-circle shadow imgs"  data-aos="fade-up" data-aos-duration="1000">
+                </div>
+                <div class="col-md-8">
+                    <div class="card p-4 shadow-sm border-0 tarjeta  text-center">
+                        <p class="parrafo">
+                            Soy una profesional apasionada por la tecnología, la comunicación y la atención al cliente, con una
+                            formación en Comunicación Social y Periodismo y una especialización reciente en Desarrollo Fullstack. 
+                            A lo largo de mi carrera, he adquirido experiencia en gestión de proyectos, 
+                            resolución de problemas técnicos y desarrollo de soluciones digitales.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="parrafo">
-                <p>Soy una profesional apasionada por la tecnología, la comunicación y la atención al
-                    cliente,
-                    con una formación en Comunicación Social y Periodismo y una especialización reciente en Desarrollo
-                    Fullstack. A lo largo de mi carrera, he adquirido experiencia en áreas clave como la gestión de
-                    proyectos,
-                    la resolución de problemas técnicos y el desarrollo de soluciones digitales.</p>
+    
+            <div class="row align-items-center caja-sobreMi flex-md-row-reverse">
+                <div class="col-md-4">
+                    <img src="../media/htmlCss.png" alt="logo Html y CSS" class="img-fluid rounded-circle shadow imgs" data-aos="fade-up" data-aos-duration="1000">
+                </div>
+                <div class="col-md-8">
+                    <div class="card p-4 shadow-sm border-0 tarjeta  text-center">
+                        <p class="parrafo">
+                            Me especializo en desarrollar proyectos web con tecnologías como HTML, CSS, JavaScript y Angular. 
+                            Mi enfoque combina habilidades técnicas con una visión estratégica, asegurando experiencias de usuario atractivas y funcionales.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="img">
-                <img src="../media/htmlCss.png" alt="logo Html y CSS">
+    
+            <div class="row align-items-center caja-sobreMi">
+                <div class="col-md-4">
+                    <img src="../media/Languages - copia.png" alt="Idiomas" class="img-fluid rounded-circle shadow imgs" data-aos="fade-up" data-aos-duration="1000">
+                </div>
+                <div class="col-md-8">
+                    <div class="card p-4 shadow-sm border-0 tarjeta  text-center">
+                        <p class="parrafo">
+                            Fluida en inglés y español, siempre busco nuevas oportunidades para mejorar mis habilidades 
+                            y aportar valor a proyectos innovadores que conecten tecnología con personas.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="parrafo">
-                <p>Destaco por mi habilidad para construir relaciones sólidas con los clientes y mi compromiso con
-                    brindar
-                    soluciones personalizadas, lo que ha resultado en altos índices de satisfacción y retención. Además,
-                    he
-                    desarrollado proyectos web utilizando tecnologías como HTML, CSS, JavaScript y Angular, combinando
-                    mis
-                    habilidades técnicas con mi capacidad organizativa y atención al detalle.
-                </p>
+        </section>
+        <section class="container py-5 text-center">
+            <h2 class="fw-bold">Mis Herramientas Favoritas</h2>
+            <div class="d-flex  caja-imgs">
+                <img src="../media/js.png" alt="HTML" class="tech-icon imgs">
+                <img src="../media/sass.png" alt="CSS" class="tech-icon imgs">
+                <img src="../media/angular.png" alt="Angular" class="tech-icon imgs">
+                <img src="../media/github.png" alt="GitHub" class="tech-icon imgs">
             </div>
-            <div class="img">
-                <img src="../media/Languages - copia.png" alt="">
-
-            </div>
-            <div class="parrafo">
-
-                <p>Fluida en inglés y español, estoy constantemente en busca de nuevas oportunidades para crecer y
-                    aportar
-                    valor a proyectos innovadores que conecten personas con tecnología.</p>
-            </div>
-            
-        </div>
+        </section>
     </main>
     <footer>
         <div class="caja-footer">
@@ -83,6 +103,9 @@
             <p>Todos los derechos reservados ©</p>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

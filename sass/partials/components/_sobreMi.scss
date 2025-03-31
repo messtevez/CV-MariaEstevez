@@ -1,29 +1,45 @@
-.caja-imgs{
-    height: 200px;
-    width: 200px;
+.caja-imgs {
+    height: 300px;
+    width: 300px;
     padding: 10px;
+    margin-bottom: 1vh;
 }
 
-.imgs{
+.imgs {
     width: 100%;
     height: 100%;
-    object-fit: cover
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.caja-sobreMi{
-    @include flex(column, center,center);    
-    width: 70%;
-    .img{
-        @extend .caja-imgs;
-        float: left;
-        img{
-            @extend .imgs;
+.caja-sobreMi {
+    @include flex(column, center, center);
+
+    .intereses-box {
+        @include flex(column, center, center);
+
+        .intereses {
+            @include flex(column, center, center);
+            width: 200px;
         }
     }
-    .parrafo{
-        width: 70%;
-        padding: 40px;
-        text-align: justify;
+
+    .intereses {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
     }
-   
+
+    .tarjeta{
+        background-color: map-get($map: $colors, $key: morado2);
+        color: map-get($map: $colors, $key: blanco );
+    }
+
+}
+
+.button-home {
+    padding-top: 5vh;
+    @include flex(column, center, center);
 }

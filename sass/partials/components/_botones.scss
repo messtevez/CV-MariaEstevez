@@ -1,0 +1,13 @@
+.button {
+    background-color: map-get($map: $colors, $key: morado);;
+    color: white; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+  
+    &:hover {
+      background-color: map-get($map: $colors, $key: morado2 );
+      transform: scale(1.1);
+    }
+  }
