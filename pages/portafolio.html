@@ -14,42 +14,100 @@
 
 <body>
     <header class="header">
+
         <a href="../index.html"><img src="../media/Portafolio .png" alt="logo ME" class="logo-header"></a>
-        <ul class="header-menu">
-            <a href="../index.html">
-                <li>Home</li>
-            </a>
-            <a href="./sobreMi.html">
-                <li>Sobre mi</li>
-            </a>
-            <a href="./experiencia.html">
-                <li>Experiencia</li>
-            </a>
-            <a href="./portafolio.html">
-                <li>Portafolio</li>
-            </a>
-            <a href="./contacto.html">
-                <li>Contacto</li>
-            </a>
-        </ul>
-    </header>
-    <main>
-        <section class="caja-portafolio">
-            <div class="imgs-portafolio">
-                <div class="caja-img">
-                    <img src="../media/BicitourInicio.PNG" alt="" class="imgs">
-                </div>
-                <div class="caja-img">
-                    <img src="../media/BicitourEventos.PNG" alt="" class="imgs">
-                </div>
-                <div class="caja-img">
-                    <img src="../media/BicitourREgistro.PNG" alt="" class="imgs">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./sobreMi.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./experiencia.html">Experiencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./portafolio.html">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="info-portafolio">
-                <p class="titulo">Bicitour X</p>
-                <p>Pagina web para un club de ciclismo. Desarrollo front y backend usando HTML,
-                    CSS, Angular y NodeJs con Express.js </p>
+        </nav>
+
+    </header>
+    <main class="portafolio">
+        <section class="container py-5">
+            <h1 class="text-center fw-bold mb-4">Mi Portafolio</h1>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <img src="../media/BicitourInicio.PNG" class="card-img-top" alt="Bicitour X">
+                        <div class="card-body">
+                            <h5 class="card-title">Bicitour X</h5>
+                            <p class="card-text"> Plataforma diseñada para conectar ciclistas y promover rutas
+                                interactivas.
+                                Incluye registro de usuarios, gestión de eventos y mapas en tiempo real.
+                                Desarrollado con Angular en el frontend y Node.js con Express en el backend.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <img src="../media/ecomUI.jpg" class="card-img-top" alt="E-commerce">
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce UI</h5>
+                            <p class="card-text">Diseño y desarrollo de una tienda online con carrito de compras,
+                                filtros avanzados y pagos en línea.
+                                Implementado con React, Bootstrap, y Firebase para la gestión de productos y
+                                autenticación de usuarios.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <img src="../media/dashboard.jpg" class="card-img-top" alt="Dashboard Analytics">
+                        <div class="card-body">
+                            <h5 class="card-title">Dashboard Analytics</h5>
+                            <p class="card-text"> Panel de análisis de datos interactivo que permite visualizar métricas
+                                en tiempo real.
+                                Construido con  Angular  y gráficos dinámicos usando Chart.js, integrado con Firebase
+                                Firestore
+                                para la recolección de datos en tiempo real.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <img src="../media/task-manager.png" class="card-img-top" alt="Task Manager App">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Manager App</h5>
+                            <p class="card-text">
+                                Aplicación web para la gestión de tareas y productividad. 
+                                Permite crear, editar y eliminar tareas con notificaciones automáticas.
+                                Desarrollado con  Vue.js ,  Node.js  y  MongoDB  para almacenamiento de datos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <img src="../media/blog.jpg" class="card-img-top" alt="Blog Personal">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Personal</h5>
+                            <p class="card-text">
+                                Blog interactivo con sistema de comentarios y categorías. 
+                                Utiliza  Next.js  para un rendimiento optimizado y  Markdown  para la gestión de contenido.
+                                Base de datos en  Firebase Firestore  y autenticación con  Google Auth .
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -65,6 +123,7 @@
             <p>Todos los derechos reservados ©</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
