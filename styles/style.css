@@ -18,34 +18,10 @@ header .logo-header, footer .logo-header {
   height: 10rem;
   margin: 0 30px;
 }
-header .header-menu, footer .header-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+header .navbar, footer .navbar {
   background-color: #622688;
-  width: 70%;
-  border-radius: 10px;
-  height: 5rem;
-}
-header .header-menu a, footer .header-menu a {
-  margin: 5px;
-  text-decoration: none;
-  color: white;
-}
-header li, footer li {
-  list-style: none;
 }
 
-@media screen and (max-width: 768px) {
-  header, footer {
-    display: grid;
-  }
-  header .header-menu, footer .header-menu {
-    width: 100%;
-    font-size: 20px;
-  }
-}
 main {
   display: flex;
   flex-direction: column;
