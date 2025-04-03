@@ -20,6 +20,16 @@ header .logo-header, footer .logo-header {
 }
 header .navbar, footer .navbar {
   background-color: #622688;
+  border-radius: 10px;
+}
+header .navbar button, footer .navbar button {
+  border-color: white;
+}
+header .navbar .navbar-toggler-icon, footer .navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+header .navbar a, footer .navbar a {
+  color: white;
 }
 
 main {
@@ -141,30 +151,11 @@ main .introduccion .texto-intro {
   font-style: italic;
 }
 
-.caja-portafolio {
-  width: 80%;
-}
-.caja-portafolio .imgs-portafolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.caja-portafolio .titulo {
-  font-weight: 600;
-  letter-spacing: 0.3vh;
-  font-style: italic;
+.card-body {
+  background-color: #622688;
+  color: white;
 }
 
-@media screen and (max-width: 768px) {
-  .caja-portafolio {
-    width: 70%;
-  }
-  .caja-portafolio .imgs-portafolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 form {
   display: flex;
   flex-direction: row;

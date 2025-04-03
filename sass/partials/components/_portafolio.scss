@@ -1,26 +1,4 @@
-.caja-portafolio {
-    width: 80%;
-    .imgs-portafolio {
-        display: flex;
-                justify-content: center;
-        align-items: center;
-    }
-
-    .titulo {
-        font-weight: 600;
-        letter-spacing: 0.3vh;
-        font-style: italic;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .caja-portafolio {
-        width: 70%;
-
-        .imgs-portafolio {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
+.card-body{
+    background-color: map-get($map: $colors, $key: morado);
+    color: white;
 }

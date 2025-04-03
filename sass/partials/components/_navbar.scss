@@ -9,6 +9,18 @@ header {
 
     .navbar{
         background-color: map-get($map: $colors, $key: morado);
+        border-radius: 10px;
+
+        button{
+            border-color: white;
+        }
+        .navbar-toggler-icon {
+            filter: invert(1); 
+        }
+
+        a{
+            color:white;
+        }
     }
 }
 
